@@ -68,6 +68,13 @@ app.post('/stop', (req, res) => {
     res.send('Stopped hitting URLs');
 });
 
+
+app.post('/check', (req, res) => {
+    console.log("Server Running")
+    res.send({"Ouput":"Dummy Server Running successfully"});
+});
+
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
